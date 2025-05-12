@@ -14,7 +14,7 @@ export default function index() {
 
   return (
     <View>
-      <Text>Login</Text>
+      <Text className="text-4xl font-semibold" >Login</Text>
 
       <Button
       title="Login"
