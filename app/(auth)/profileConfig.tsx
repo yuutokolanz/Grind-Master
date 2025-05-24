@@ -1,10 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React from "react";
+import Header from "../../components/general/Header";
 
 export default function ProfileConfig() {
   return (
-    <View>
+    <View className="flex-1 items-center justify-start bg-zinc-900">
+      <Header.Auth></Header.Auth>
       <Text>ProfConfig</Text>
     </View>
-  )
+  );
 }

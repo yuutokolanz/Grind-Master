@@ -7,12 +7,15 @@ import FormRegister from "../components/Form/FormRegister";
 export default function register() {
   return (
     <View className="flex-1 items-center justify-between bg-zinc-900">
-      <Header></Header>
+      <Header.Login></Header.Login>
       <View className="self-start justify-self-start pl-10">
         <BackButton></BackButton>
       </View>
       <View className="flex items-center justify-center gap-12">
-        <Image className="mb-14" source={require("../assets/images/GrindMasterText.png")}></Image>
+        <Image
+          className="mb-14"
+          source={require("../assets/images/GrindMasterText.png")}
+        ></Image>
 
         <FormRegister></FormRegister>
       </View>
