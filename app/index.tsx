@@ -1,28 +1,22 @@
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Text, Image } from "react-native";
 import React from "react";
-import { router } from "expo-router";
+import Header from "../components/general/Header";
+import FormLogin from "../components/Form/FormLogin";
 
 export default function index() {
-  const handleLogin = () => {
-    console.log("TODO: login user!");
-    router.push("/(auth)/home");
-  };
-
-  const handleRegister = () => {
-    router.push("/register");
-  };
 
   return (
-    <View>
-      <Text>Login</Text>
+    <View className="flex-1 items-center justify-start gap-y-44 bg-zinc-900">
+      <Header></Header>
 
-      <Button
-      title="Login"
-      onPress={handleLogin} />
+      <View className="flex items-center justify-center gap-6">
+        <Image className="mb-14" source={require('../assets/images/GrindMasterText.png')}></Image>
+        {/* <Text className="text-4xl font-semibold">Grind Master</Text> */}
 
-      <Button
-      title="Register"
-      onPress={handleRegister} />
+        <FormLogin></FormLogin>
+      </View>
+
+      <Text className="self-end place-self-end text-cyan-800 font-semibold text-lg">Forje sua jornada. Rastreie seu legado.</Text>
     </View>
   );
 }
