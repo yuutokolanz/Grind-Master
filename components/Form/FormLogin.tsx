@@ -1,21 +1,21 @@
 import { View, Text, TouchableHighlight } from "react-native";
-import React from "react";
-import FormInput from "./FormInput";
+import React, { useState } from "react";
+import FormInput from "../general/FormInput";
 import CustomButton from "../general/Button";
 import { router } from "expo-router";
 
 export default function FormLogin() {
   const handleLogin = () => {
-      console.log("TODO: login user!");
-      console.log(username, password);
-      router.push("/(auth)/home");
-    };
-  
-    const handleRegister = () => {
-      router.push("/register");
-    };
-  const [username, setUsername] = React.useState<string>("");
-  const [password, setPassword] = React.useState<string>("");
+    console.log("TODO: login user!");
+    console.log(username, password);
+    router.push("/(auth)/home");
+  };
+
+  const handleRegister = () => {
+    router.push("/register");
+  };
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   return (
     <View className="flex flex-col items-center justify-center gap-8">
@@ -32,7 +32,9 @@ export default function FormLogin() {
       ></FormInput>
 
       <TouchableHighlight onPress={() => console.log("TODO: forgot password")}>
-        <Text className="text-cyan-800 font-semibold text-lg">Esqueceu sua senha?</Text>
+        <Text className="text-cyan-800 font-semibold text-lg">
+          Esqueceu sua senha?
+        </Text>
       </TouchableHighlight>
 
       <CustomButton onPress={handleLogin} title="Login"></CustomButton>
