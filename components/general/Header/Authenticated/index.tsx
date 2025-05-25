@@ -42,7 +42,7 @@ export default function AuthHeader() {
           onPress={() => {
             hideModal();
           }}
-          className="bg-red-500 w-1/2"
+          className="bg-red-500 w-1/2 rounded-lg"
         />
       </View>
     );

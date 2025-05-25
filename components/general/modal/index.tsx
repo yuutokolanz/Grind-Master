@@ -14,7 +14,6 @@ export default function MyModal() {
     >
       <TouchableWithoutFeedback onPress={hideModal}>
         <View className="flex-1 justify-center items-center bg-black/50 border-[#7BAFD4]">
-          {/* Impede que o toque dentro do conteúdo feche o modal */}
           <TouchableWithoutFeedback>{content}</TouchableWithoutFeedback>
         </View>
       </TouchableWithoutFeedback>
