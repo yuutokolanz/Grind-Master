@@ -8,6 +8,7 @@ import MyModal from "../../components/general/modal";
 export default function _layout() {
   return (
     <>
+      <Header.Auth></Header.Auth>
       <Tabs
         screenOptions={{
           tabBarStyle: {

@@ -1,8 +1,10 @@
 import { View, Text } from "react-native";
 import React from "react";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+import { Games } from "../../../../constants/enums";
 
 export type TaskCardProps = {
+  game: Games;
   taskTitle: string;
   taskDescription: string;
   reapeatable: boolean;

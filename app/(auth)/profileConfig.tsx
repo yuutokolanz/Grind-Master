@@ -5,7 +5,6 @@ import Header from "../../components/general/Header";
 export default function ProfileConfig() {
   return (
     <View className="flex-1 items-center justify-start bg-zinc-900">
-      <Header.Auth></Header.Auth>
       <Text>ProfConfig</Text>
     </View>
   );
