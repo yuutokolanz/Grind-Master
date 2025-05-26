@@ -52,16 +52,28 @@ A modelagem a seguir foi pensada com foco em persistência local usando banco de
 
 | Sprint      | Período    | Tarefas principais                                                                 | Status      |
 |-------------|------------|-------------------------------------------------------------------------------------|-------------|
-| Sprint 1    | Semana 1 | Definir funcionalidades, criar repositório, elaborar protótipos e modelagem do DB  | [X] Concluído |
-| Sprint 2    | Semana 2-3 | Implementar login, cadastro de usuário e navegação inicial                         | [ ] A fazer   |
-| Sprint 3    | Semana 4-5 | Cadastro de jogos e estrutura de perfis                                           | [ ] A fazer   |
-| Sprint 4    | Semana 6-7 | Registro e exibição de partidas                                                    | [ ] A fazer   |
-| Sprint 5    | Semana 8-9| Implementação dos gráficos de desempenho                                           | [ ] A fazer   |
+| Sprint 1    | Semana 1 | Definir funcionalidades, criar repositório, elaborar protótipos e modelagem do DB     | [X] Concluído |
+| Sprint 2    | Semana 2-3 | Navegação inicial                                                                   | [X] Concluído |
+| Sprint 3    | Semana 4-5 | Exibição de partidas                                                                | [X] Concluído |
+| Sprint 4    | Semana 6-7 | Registro de partidas, implementação de cadastro e login funcional                   | [ ] A fazer   |
+| Sprint 5    | Semana 8-9| Implementação dos gráficos de desempenho                                             | [ ] A fazer   |
 | Sprint 6    | Semana 10-11 | Refino visual, testes, funcionalidades adicionais e entrega final                 | [ ] A fazer   |
 
 ---
 
-> **Repositório GitHub:** [github.com/seu-usuario/grind-master](https://github.com/yuutokolanz/Grind-Master)
+## Atualizações desde o último checkpoint
+
+[Vídeo de apresentação do CheckPoint 2](https://youtu.be/c2_dMnnfaTs)
+
+Utilizei o NativeWind para estilização de todas as telas e componentes da aplicação.
+Utilizei o Zustand para criar um hook chamado useGame, que gerencia qual jogo o usuário está interagindo na aplixação, mudando os Cards das telas principais e formulários das modais com base no jogo atual. 
+Utilizei o aninhamento de layouts para ter um Stack na telas não autenticadas e um Tabs nas telas autenticadas.
+Criei componentes Cards reutilizáveis, para contextos diferentes.
+Utilizei dados mocks para testar o funcionamento da aplicação.
+
+---
+
+> **Repositório GitHub:** [github.com/yuutokolanz/grind-master](https://github.com/yuutokolanz/Grind-Master)
 
 ---
 
